@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="01_spring_test_bean" />
+        <module name="05_spring_test_02tx" />
+        <module name="02_spring_test_DI" />
+        <module name="01_spring_test_factory" />
+        <module name="05_spring_test_03tx_anno" />
+        <module name="03_spring_test_annoioc" />
+        <module name="04_spring_test_SpringAOP" />
+        <module name="01_spring_test" />
+        <module name="05_spring_test_01jdbctemplate" />
+        <module name="03_spring_test_xmlioc" />
+        <module name="04_spring_test_05annotationAOP" />
+        <module name="03_spring_test_withoutxml" />
+        <module name="04_spring_test_04adviceType" />
+        <module name="02_spring_test_ioc" />
+        <module name="04_spring_test_proxy" />
+        <module name="04_spring_test_account" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

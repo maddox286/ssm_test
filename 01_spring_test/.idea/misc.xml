@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../01_spring_test_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/../../02_spring_test_DI/pom.xml" />
+        <option value="$PROJECT_DIR$/../../02_spring_test_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../01_spring_test_factory/pom.xml" />
+        <option value="$PROJECT_DIR$/../../03_spring_test_xmlioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../../03_spring_test_annoioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../../03_spring_test_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/../../04_spring_test_account/pom.xml" />
+        <option value="$PROJECT_DIR$/../../04_spring_test_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/../../04_spring_test_SpringAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/../../04_spring_test_04adviceType/pom.xml" />
+        <option value="$PROJECT_DIR$/../../04_spring_test_05annotationAOP/pom.xml" />
+        <option value="$PROJECT_DIR$/../../05_spring_test_01jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/../../05_spring_test_02tx/pom.xml" />
+        <option value="$PROJECT_DIR$/../../05_spring_test_03tx_anno/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

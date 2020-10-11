@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置beanfactory-->
+    <bean id="beanfactory" class="com.factory.BeanFactory">
+        <!--注入事务管理器-->
+        <property name="txManager" ref="txManager"/>
+        <!--注入Service-->
+        <property name="accountService" ref="accountService"/>
+    </bean>
+
+    <!--配置代理的Service-->
+    <bean id="proxyAccountService" factory-bean="beanfactory" factory-method="getAccountService"/>
+
+    <bean id="accountService" class="com.service.impl.AccountServiceImpl">
+        <!--注入dao-->
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+
+    <bean id="accountDao" class="com.dao.impl.AccountDaoImpl">
+        <!--注入QueryRunner-->
+        <property name="runner" ref="runner"/>
+        <!--注入ConnectionUtils-->
+        <property name="connectionUtils" ref="connectionUtils"/>
+    </bean>
+
+    <!--配置QueryRunner-->
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype"/>
+
+    <!-- 配置数据源 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--连接数据库的必备信息-->
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&amp;serverTimezone=UTC"/>
+        <property name="user" value="root"/>
+        <property name="password" value="12345678"/>
+    </bean>
+
+    <!--配置Connection的工具类ConnectionUtils-->
+    <bean id="connectionUtils" class="com.utils.ConnectionUtils">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--配置事务管理器-->
+    <bean id="txManager" class="com.utils.TransactionManager">
+        <!--注入ConnectionUtils-->
+        <property name="connectionUtils" ref="connectionUtils"/>
+    </bean>
+
+</beans>
