@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="many2many" />
+        <module name="05_mybatis_test_anntation" />
+        <module name="one2many" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="01_mybits_test" target="1.5" />
+      <module name="05_mybatis_test_annotation" target="1.5" />
+      <module name="05_mybatis_test_anntation" target="1.5" />
+      <module name="lazyLoading" target="1.5" />
+      <module name="many2many" target="1.5" />
+      <module name="one2many" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

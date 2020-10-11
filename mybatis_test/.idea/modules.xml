@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../01_mybatis_test_sql/01_mybits_test.iml" filepath="$PROJECT_DIR$/../01_mybatis_test_sql/01_mybits_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../05_mybatis_test_anntation/05_mybatis_test_anntation.iml" filepath="$PROJECT_DIR$/../05_mybatis_test_anntation/05_mybatis_test_anntation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../04_mybatis_test_one2many_lazyload/lazyLoading.iml" filepath="$PROJECT_DIR$/../04_mybatis_test_one2many_lazyload/lazyLoading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../03_mybatis_test_many2many/01_mybits_test (1).iml" filepath="$PROJECT_DIR$/../03_mybatis_test_many2many/01_mybits_test (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../02_mybatis_test_one2many/one2many.iml" filepath="$PROJECT_DIR$/../02_mybatis_test_one2many/one2many.iml" />
+    </modules>
+  </component>
+</project>

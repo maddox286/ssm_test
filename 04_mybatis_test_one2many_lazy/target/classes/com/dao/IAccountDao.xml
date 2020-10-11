@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.IAccountDao">
+    <!-- SQL语句 -->
+    <!-- 配置查询所有 -->
+
+    <!-- 定义封装account和user的resultMap -->
+    <resultMap id="accountUserMap" type="account">
+        <id property="id" column="aid"/>
+        <result property="uid" column="uid"/>
+        <result property="money" column="money"/>
+        <!-- 一对一的关系映射：配置封装user的内容 -->
+        <association property="user" column="uid" javaType="User" select="com.dao.IUserDao.findById">
+        </association>
+    </resultMap>
+
+    <select id="findAll" resultMap="accountUserMap">
+        select * from account
+    </select>
+
+    <select id="findByUid" parameterType="INT" resultType="Account">
+        select * from account where uid = #{uid}
+    </select>
+
+</mapper>
