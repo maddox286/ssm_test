@@ -7,7 +7,7 @@ public class User implements Serializable{
 
     private String uname;
     private Integer age;
-
+    private String str;
     private Date date;
 
     public String getUname() {
